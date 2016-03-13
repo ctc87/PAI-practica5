@@ -109,7 +109,7 @@ public class ControladorCambioDivisas {
     
     /**
      * Setter. {@link ControladorCambioDivisas#titulo}
-     * @param Fija titulo en titulo 
+     * @param titulo en titulo 
      */
     public void setTitulo(String titulo) {
         this.titulo = titulo;
@@ -125,7 +125,7 @@ public class ControladorCambioDivisas {
     
     /**
      * Setter. {@link ControladorCambioDivisas#cantidadOrigen}
-     * @param Fija cantidadOrigen en cantidadOrigen 
+     * @param cantidadOrigen en cantidadOrigen 
      */
     public void setCantidadOrigen(String cantidadOrigen) {
         this.cantidadOrigen = cantidadOrigen;
@@ -141,7 +141,7 @@ public class ControladorCambioDivisas {
 
     /**
      * Setter. {@link ControladorCambioDivisas#cantidadDestino}
-     * @param Fija cantidadDestino en cantidadDestino 
+     * @param cantidadDestino en cantidadDestino 
      */
     public void setCantidadDestino(String cantidadDestino) {
         this.cantidadDestino = cantidadDestino;
@@ -157,7 +157,7 @@ public class ControladorCambioDivisas {
     
     /**
      * Setter. {@link ControladorCambioDivisas#nombreOrigen}
-     * @param Fija nombreOrigen en nombreOrigen 
+     * @param nombreOrigen en nombreOrigen 
      */
     public void setNombreOrigen(String nombreOrigen) {
         this.nombreOrigen = nombreOrigen;
@@ -173,7 +173,7 @@ public class ControladorCambioDivisas {
     
     /**
      * Setter. {@link ControladorCambioDivisas#nombreDestino}
-     * @param Fija nombreDestino en nombreDestino 
+     * @param nombreDestino en nombreDestino 
      */
     public void setNombreDestino(String nombreDestino) {
         this.nombreDestino = nombreDestino;
@@ -189,7 +189,7 @@ public class ControladorCambioDivisas {
     
     /**
      * Setter. {@link ControladorCambioDivisas#simboloOrigen}
-     * @param Fija simboloOrigen en simboloOrigen 
+     * @param simboloOrigen en simboloOrigen 
      */
     public void setSimboloOrigen(String simboloOrigen) {
         this.simboloOrigen = simboloOrigen;
@@ -205,7 +205,7 @@ public class ControladorCambioDivisas {
     
     /**
      * Setter. {@link ControladorCambioDivisas#simboloDestino}
-     * @param Fija simboloDestino en simboloDestino 
+     * @param simboloDestino en simboloDestino 
      */
     public void setSimboloDestino(String simboloDestino) {
         this.simboloDestino = simboloDestino;

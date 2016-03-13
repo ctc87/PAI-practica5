@@ -96,7 +96,7 @@ public class VistaCambioDivisas  extends JFrame {
 
     /**
      * Setter. {@link VistaCambioDivisas#contenedor}
-     * @param Fija contenedor en contenedor 
+     * @param contenedor en contenedor 
      */
     
     public void setContenedor(JPanel contenedor) {
