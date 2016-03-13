@@ -1,19 +1,19 @@
   <img src="./img/java.png" align="left" width="22%">
 
-# Práctica 4 Fundamentos de interfaces gráficas de usuario
+# Práctica 4 Modelo vista controlador.
 
-## Repositorio PAI-practica4
+## Repositorio PAI-practica5
 Los objetivos de esta práctica son:
 
-* Practicar la programación en Java, a trav es de ejercicios.
+* Diseño e implementación de interfaces gráficas de usuario.
 
-* Primera toma de contacto con diferentes componentes de una interfaz gráfica
-de usuario.
+* Conocer y ejercitar el patrón de diseño MVC.
+
 
 
 * author  Carlos Troyano Carmona
 * version 1.1
-* since   2016-03-05
+* since   2016-03-16
 * [Página del repositorio](http://ctc87.github.io/PAI-practica4/doc/index.html)
 
 ### adivinaUnNumero
