@@ -14,74 +14,46 @@ Los objetivos de esta práctica son:
 * author  Carlos Troyano Carmona
 * version 1.1
 * since   2016-03-16
-* [Página del repositorio](http://ctc87.github.io/PAI-practica4/doc/index.html)
+* [Página del repositorio](http://ctc87.github.io/PAI-practica5/doc/index.html)
 
-### adivinaUnNumero
-Es un paquete que una clase.
+### modelo
+Este paquete contiene todo lo relacionado con los datos del problema.
 
-#### AdivinaUnNumero:
+#### MonedasRelacionEuro:
 
-* AdivinaUnNumero es la clase base de un juego de azar. El juego trata básicamente sobre adivinar un número de tres cifras o algunas de sus cifras.
+* MonedasRelacionEuro es la clase que forma parte del modelo de la aplicación. Contiene las relaciones entre las distintas monedas y el euro. Se utiliza para después hacer cambios de moneda y acceder al nombre de la moneda o a su símbolo.
 
-* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica4/blob/gh-pages/src/adivinaUnNumero/AdivinaUnNumero.java)
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica5/blob/gh-pages/src/modelo/MonedasRelacionEuro.java)
 
 
-### constantesHtml
-* Es un paquete que contiene una clase.
+#### Conversor:
 
-#### ConstantesHtml:
+* Conversor es la clase un objeto de la clase MonedasRelacionEuro y lo utiliza para crear un árbol con los valores de cambio de dicha moneda respecto a una cantidad de euros de entrada. Forma parte del modelo y es utilizado directamente por el controlador para gestionar la vista. Que no es más que la interfaz del programa
 
-* ConstantesHtml es la clase que contiene una serie de constantes HTML que equivalen a etiquetas html.
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica5/blob/gh-pages/src/modelo/Conversor.java)
 
-* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica4/blob/gh-pages/src/constantesHtml/ConstantesHtml.java)
+### vista
+* Vista es el paquete que contiene todo lo realcionado con la vista en el probelma. Es decir la interfaz gráfica. Y todos los métodos que la gestionan.
 
-### excepcionesEnNumeros
-* Es un paquete que contiene una clase.
+#### PanelMoneda:
 
-#### ExcepcionesEnNumeros:
+* PanelMoneda es una clase que hereda de Jpanel. Por lo tanto es un panel personalizado. Crea un panel personalizado con métodos que permiten insertar los textos necesarios para mostrar en GUI.
+Esta clase pertenece a la vista. Es utilizada por la clase vista para generar distintas instancias de paneles personalizados.
 
-* ExcepcionesEnNumeros es una clase que suma varios números enteros. Y comprueba que efectivamente son enteros.
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica5/blob/gh-pages/src/vista/PanelMoneda.java)
 
-* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica4/blob/gh-pages/src/excepcionesEnNumeros/ExcepcionesEnNumeros.java)
 
-### javaAHTML
-  * Es un paquete que contiene dos clases.
+#### VistaCambioDivisas:
+* VistaCambioDivisas es la clase que genera las vistas de la aplicación Cambio de divisas. Esta extiende Jframe, por lo que es una ventana personalizada.
+Utiliza la clase PanelMoneda Para generar paneles a través de un TreeMap. Así el controlador le facilita esta estructura las veces necesarias para generar las vistas de cambios a distintas divisas, siendo está independiente de el modelo y únicamente gestionada por el controlador.
 
-#### EjecucionJavaAHtml:
-* EjecucionJavaAHtml es la clase que ejecuta un programa principal de la clase JavaAHTML.
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica5/blob/gh-pages/src/vista/VistaCambioDivisas.java)
 
-* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica4/blob/gh-pages/src/javaAHTML/EjecucionJavaAHtml.java)
 
-#### JavaAHTML:
+### controlador
+  Controlador es el paquete que hace de intermediario entre la vsita y el modelo.
 
-* JavaAHTML es una clase que a partir de un archivo de java, genera un html.
+#### ControladorCambioDivisas:
+* ControladorCambioDivisas es la clase que hace de controlador entre la vista VistaCambioDivisas y el modelo Conversor. Este comunica a la vista los datos recibidos por el modelo Genera un mapa con los datos del modelo que son cargados en la vista que acepta este tipo de objetos para generarse.
 
-* Salida
- 1. Palabras reservadas: negrita.
- 2. Cadenas literales: amarillo.
- 3. Comentarios: Azul.
- 4. Resto: negro.
-
-* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica4/blob/gh-pages/src/javaAHTML/JavaAHTML.java)
-
-### numerosHexadecimales
-  Es un paquete que contiene dos clases.
-
-#### NumerosHexademiales:
-* NumerosHexademiales es una clase que convierte números Hexadecimales en números decimales. Para ello cuenta con una excepción personalizada HexFormatException.
-* Cuenta con interfaz gráfica de usuario con botones personalizados.
-
-* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica4/blob/gh-pages/src/numerosHexadecimales/NumerosHexademiales.java)
-
-#### HexFormatException:
-* HexFormatException es la clase que crea una excepción de tipo checked hija de la clase Exception. Esta informa sobre un Error el formato de un número hexadecimal.
-
-* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica4/blob/gh-pages/src/numerosHexadecimales/HexFormatException.java)
-
-### palabrasNoDuplicadas
-  Es un paquete que contiene una clase.
-
-#### PalabrasNoDuplicadas:
-* PalabrasNoDuplicadas es una clase que recibe un archivo te texto de entrada y imprime en una lista por pantalla, las palabras no repetidas en orden alfabético inverso.
-
-* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica4/blob/gh-pages/src/palabrasNoDuplicadas/PalabrasNoDuplicadas.java)
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica5/tree/gh-pages/src/controlador)
